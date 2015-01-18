@@ -1,0 +1,29 @@
+
+{
+    "name": "job-scheduler/client",
+    "description": "Job Scheduler Client for PHP",
+    "keywords": ["Job Scheduler", "json", "client"],
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Joost Faassen",
+            "email": "j.faassen@linkorb.com",
+            "homepage": "http://www.linkorb.com",
+            "role": "Developer"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/job-scheduler/client/issues"
+    },
+    "require": {
+        "symfony/console": "~2.4",
+        "guzzlehttp/guzzle": "~4.2"
+    },
+    "bin": ["bin/job-scheduler-client"],
+    "autoload": {
+        "psr-4": {
+            "JobScheduler\\Client\\": "src/"
+        }
+    }
+}
